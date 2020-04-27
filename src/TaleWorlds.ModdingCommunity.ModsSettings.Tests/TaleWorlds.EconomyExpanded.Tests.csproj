@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <RootNamespace>TaleWorlds.EconomyExpanded.Tests</RootNamespace>
+        <TargetFramework>net472</TargetFramework>
+        <Platform>x64</Platform>
+        <PlatformTarget>x64</PlatformTarget>
+        <IsPackable>False</IsPackable>
+        <Configurations>Release;Debug</Configurations>
+        <Platforms>x64;AnyCPU</Platforms>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+        <PackageReference Include="MSTest.TestAdapter" Version="2.0.0" />
+        <PackageReference Include="MSTest.TestFramework" Version="2.0.0" />
+        <PackageReference Include="coverlet.collector" Version="1.0.1" />
+    </ItemGroup>
+</Project>

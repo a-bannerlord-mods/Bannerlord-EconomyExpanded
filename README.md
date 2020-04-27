@@ -1,1 +1,1 @@
-# Bannerlord-EconomyExpanded
+# Bannerlord-ModsSettings

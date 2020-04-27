@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TaleWorlds.EconomyExpanded</RootNamespace>
+    <TargetFramework>net472</TargetFramework>
+    <Platform>x64</Platform>
+    <PlatformTarget>x64</PlatformTarget>
+    <Configurations>Release;Debug</Configurations>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>\Modules\EconomyExpanded\bin\Win64_Shipping_Client\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.0.0.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets/**/*.*" Link="..\..\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="Assets/**/*.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\GUI\Prefabs\" />
+    <Folder Include="Patching\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+</Project>
